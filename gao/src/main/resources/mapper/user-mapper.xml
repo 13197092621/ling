@@ -1,0 +1,15 @@
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="gaoji.gao.mapper.LoginTicketMapper">
+
+
+    <select id="selectByTicket" resultType="gaoji.gao.entity.LoginTicket">
+    select * from  login where ticket=#{ticket}
+  </select>
+<insert id="insertLoginTicket">
+   insert into login1(user_id, ticket, status, expires) values(#{userId}, #{ticket}, #{status}, #{expires})
+</insert>
+
+</mapper>
