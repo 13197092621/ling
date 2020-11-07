@@ -16,4 +16,8 @@ public class Configinter implements WebMvcConfigurer {
         registry.addInterceptor(new LoginInterceptor()).addPathPatterns("/session.do").excludePathPatterns();//设置拦截例外
     }
 
+    public static void main(String[] args) {
+        System.out.println("更新1");;
+    }
+
 }
